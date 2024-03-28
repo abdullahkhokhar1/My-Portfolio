@@ -8,17 +8,21 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
-<body>
+<body style="background-image: url('Images/background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <header>
-        <a href="#" class="logo"><span>A</span>bdullah<span>K</span>hokhar</a>
-        <ul class="navlist">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </header>
+		<div class="menu-icon" onclick="toggleMenu()">
+			<i class='bx bx-menu'></i>
+		</div>
+		<a href="#" class="logo"><span>A</span>bdullah<span>K</span>hokhar</a>
+		<nav class="navlist" id="navlist">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projects.html" class="active">Projects</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
     <section class="portfolio" id="portfolio">
         <div class="main-text">
             <h2><span>Latest</span> Projects</h2>
@@ -26,7 +30,7 @@
         <div class="portfolio-content">
             <div class="project">
                 <div class="row">
-                    <img src="Images/project1.JPG" alt="Project 1 Image">
+                    <img src="Images/project1.jpg" alt="Project 1 Image">
                     <div class="layer">
                         <h5>Titanic Survival Prediction</h5>
                         <a href="https://github.com/abdullahkhokhar1/CODSOFT/blob/main/Titanic%20Survival%20Prediction.ipynb"> <i class='bx bx-link-external'></i></a>
@@ -66,7 +70,7 @@
             </div>
             <div class="project">
                 <div class="row">
-                    <img src="Images/project3.JPG" alt="Project 3 Image">
+                    <img src="Images/project3.jpg" alt="Project 3 Image">
                     <div class="layer">
                         <h5>Movie Rating Prediction</h5>
                         <a href="https://github.com/abdullahkhokhar1/CODSOFT/blob/main/Movie%20Rating%20Prediction.ipynb"> <i class='bx bx-link-external'></i></a>
@@ -119,7 +123,7 @@
             </div>
             <div class="project">
                 <div class="row">
-                    <img src="Images/project2.JPG" alt="Project 2 Image">
+                    <img src="Images/project2.jpg" alt="Project 2 Image">
                     <div class="layer">
                         <h5>Iris Flower Classification</h5>
                         <a href="https://github.com/abdullahkhokhar1/CODSOFT/blob/main/Iris%20Flower%20Classification.ipynb"> <i class='bx bx-link-external'></i></a>
@@ -167,5 +171,26 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="end">
+            <div class="last-text">
+                <h3>Legal</h3>
+                <p>&copy; 2024 Abdullah Khokhar. All rights reserved.</p>
+            </div>
+            <div class="top">
+                <a href="#portfolio"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var navlist = document.getElementById("navlist");
+            if (navlist.style.display === "block") {
+                navlist.style.display = "none";
+            } else {
+                navlist.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
