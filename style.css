@@ -259,6 +259,7 @@ section {
     align-items: center;
     gap: 2.5rem;
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .box {
@@ -634,13 +635,18 @@ form textarea {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    background: var(--bg-color);
+    background-color: #05b4ff2f;
+}
+
+.last-text h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .last-text p {
     color: var(--second-color);
     font-size: 14px;
-
+    margin-bottom: 15px;
 }
 
 .top i {
@@ -651,20 +657,20 @@ form textarea {
     background: var(--main-color);
 }
 
+
 @media (max-width: 1480px) {
     header {
         padding: 12px 2.5%;
         transition: .1s;
     }
-
     section {
         padding: 110px 3% 60px;
     }
-
     .end {
         padding: 15px 3%;
     }
 }
+
 @media (max-width: 1100px){
     :root{
         --big-font:4rem;
@@ -679,6 +685,7 @@ form textarea {
         height: 87vh;
     }
 }
+
 @media (max-width:920){
     .about{
         grid-template-columns: 1fr;
@@ -693,37 +700,235 @@ form textarea {
         grid-template-columns: 1fr;
     }
 }
-@media (max-width: 480px){
-    #menu-icon{
+
+@media (max-width: 768px) {
+    header {
+        padding: 12px 2.5%;
+    }
+    section {
+        padding: 110px 3% 60px;
+    }
+    .end {
+        padding: 15px 3%;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .about-img img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    .home {
+        height: auto;
+        padding-bottom: 80px;
+    }
+    .home-text {
+        text-align: center;
+    }
+    .home-text h1 {
+        font-size: 3rem;
+    }
+    .home-text h3 {
+        font-size: 1.8rem;
+    }
+    .home-text p {
+        font-size: 1rem;
+    }
+    .about-text h2 {
+        font-size: 2rem;
+    }
+    .services-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .box {
+        padding: 20px;
+    }
+    .box h3 {
+        font-size: 1.5rem;
+    }
+    .box p {
+        font-size: 0.9rem;
+    }
+    .end {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .last-text h3 {
+        font-size: 1.5rem;
+    }
+    .last-text p {
+        font-size: 0.9rem;
+    }
+    .top i {
+        font-size: 1rem;
+    }
+    .navlist {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #202020;
+        padding: 10px;
+    }
+    .navlist a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navlist {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      height: 100vh;
+      background: var(--bg-color);
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      transition: right 0.3s ease;
+    }
+    .menu-toggle:checked ~ .navlist {
+      right: 0;
+    }
+    .navlist a {
+      margin: 20px 0;
+      font-size: 22px;
+      display: block;
+      transition: all 0.3s ease;
+      color: var(--text-color);
+    }
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+}
+.navlist ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navlist ul li {
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
         display: block;
     }
-    .navlist{
-        position: absolute;
-        top: -1000px;
-        right: 0;
+    .navlist {
+        display: none;
+        width: 100%;
+        position: fixed;
+        top: 80px;
         left: 0;
+        background-color: #003146de;
+        padding: 10px 0;
+        z-index: 999;
+    }
+    .navlist ul {
+        flex-direction: column;
+    }
+    .navlist ul li {
+        margin: 10px 0;
+        text-align: center;
+        background-color: #000000bd;
+        padding: 2px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: url('Images/background.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .portfolio-content {
         display: flex;
         flex-direction: column;
-        background: var(--bg-color);
-        text-align: left;
-        transition: all .45s ease;
-
     }
-    .navlist a{
+    .project {
+        margin-bottom: 50px;
+    }
+    .row {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .row img {
+        width: 100%;
+        border-radius: 8px;
         display: block;
-        margin: 17px;
+        transition: transform 0.5s;
+    }
+    .project .layer {
+        width: 100%;
+        height: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), #000000ab);
+        position: absolute;
+        border-radius: 8px;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 40px;
+        transition: height 0.5s;
+    }
+    .project .layer h5 {
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.6);
         font-size: 20px;
-        transition: all .45s ease;
-        color: var(--text-color);
-
+        font-weight: 800;
+        margin-bottom: 15px;
+        margin-top: 10px;
     }
-    .navlist a:hover{
-        color: var(--main-color);
+    .project .layer p {
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 1.8;
     }
-    navlist a.active{
-        color: var(--text-color);
+    .project .description {
+        margin-top: 20px;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
     }
-    .navlist.open{
-        top: 100%;
+    .project .description h3 {
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .project .description p {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .portfolio{
+        margin-bottom: 1550px;
+    }
+    .footer {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .footer p {
+        margin: 0;
     }
 }
