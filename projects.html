@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>A</span>bdullah<span>K</span>hokhar</a>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2><span>Latest</span> Projects</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="project">
+                <div class="row">
+                    <img src="Images/project1.jpg" alt="Project 1 Image">
+                    <div class="layer">
+                        <h5>Titanic Survival Prediction</h5>
+                        <a href="https://github.com/abdullahkhokhar1/CODSOFT/blob/main/Titanic%20Survival%20Prediction.ipynb"> <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>Used the Titanic dataset to build a model predicting passenger survival. Here's a breakdown of the key steps:</p>
+                    <ul>
+                        <li>• Data Visualization:
+                            <ul>
+                                <li> - Utilized libraries like Seaborn and Matplotlib for visualizing data.</li>
+                                <li> - Gained insights into patterns and trends within the dataset.</li>
+                            </ul>
+                        </li>
+                        <li>• Data Cleaning:
+                            <ul>
+                                <li> - Addressed missing values in the 'Age' and 'Fare' columns by filling them with mean values.</li>
+                                <li> - Eliminated the 'Cabin' column due to a high number of missing values.</li>
+                            </ul>
+                        </li>
+                        <li>• Feature Engineering:
+                            <ul>
+                                <li> - Transformed the 'Sex' column into numerical values (0 for female, 1 for male).</li>
+                                <li> - Dropped less relevant columns such as 'Name', 'Ticket', and 'Embarked'.</li>
+                            </ul>
+                        </li>
+                        <li>• Model Building and Evaluation:
+                            <ul>
+                                <li> - Split the data into dependent and independent variables.</li>
+                                <li> - Utilized 'train_test_split' to create separate training and testing datasets.</li>
+                                <li> - Implemented Logistic Regression model for prediction.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="row">
+                    <img src="Images/project3.jpg" alt="Project 3 Image">
+                    <div class="layer">
+                        <h5>Movie Rating Prediction</h5>
+                        <a href="https://github.com/abdullahkhokhar1/CODSOFT/blob/main/Movie%20Rating%20Prediction.ipynb"> <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>Developed a movie rating prediction model. Here's a breakdown of the key steps:</p>
+                    <ul>
+                        <li>• Data Collection and Preparation:
+                            <ul>
+                                <li> - Loaded and merged datasets containing movies information, user ratings, and user profiles.</li>
+                                <li> - Ensured data cleanliness by handling missing values in all relevant datasets.</li>
+                            </ul>
+                        </li>
+                        <li>• Exploratory Data Analysis:
+                            <ul>
+                                <li> - Leveraged powerful libraries like pandas, numpy, and seaborn for insightful data visualization.</li>
+                                <li> - Explored correlations among features through heatmaps.</li>
+                                <li> - Visualized user age distribution using bar plots to understand the dataset's characteristics.</li>
+                            </ul>
+                        </li>
+                        <li>• Feature Engineering:
+                            <ul>
+                                <li> - Selected key features, including "MovieID," "Age," and "Occupation," as independent variables.</li>
+                                <li> - Transformed categorical data like "Gender" into numerical values for model compatibility.</li>
+                            </ul>
+                        </li>
+                        <li>• Model Building:
+                            <ul>
+                                <li> - Chose the Decision Tree Regressor for its suitability in predicting continuous numerical values.</li>
+                                <li> - Used the "train_test_split" method to divide the data into training and testing sets.</li>
+                                <li> - Trained the model on the training data, allowing it to learn patterns from the data.</li>
+                            </ul>
+                        </li>
+                        <li>• Model Evaluation:
+                            <ul>
+                                <li> - Assessed the model's performance using vital metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared.</li>
+                                <li> - These metrics quantified the model's accuracy in predicting movie ratings.</li>
+                            </ul>
+                        </li>
+                        <li>• Insights and Visualization:
+                            <ul>
+                                <li> - Visualized feature importances using a bar plot, highlighting the most influential features.</li>
+                                <li> - Plotted a scatter plot comparing actual ratings with predicted ratings, offering an intuitive view of model performance.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="row">
+                    <img src="Images/project2.jpg" alt="Project 2 Image">
+                    <div class="layer">
+                        <h5>Iris Flower Classification</h5>
+                        <a href="https://github.com/abdullahkhokhar1/CODSOFT/blob/main/Iris%20Flower%20Classification.ipynb"> <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>Used the Iris flower dataset to build a model classifying Iris flowers into their respective species. Here's a breakdown of the key steps:</p>
+                    <ul>
+                        <li>• Data Preparation:
+                            <ul>
+                                <li> - Loaded and examined the Iris dataset using Pandas.</li>
+                            </ul>
+                        </li>
+                        <li>• Data Visualization:
+                            <ul>
+                                <li> - Created histograms to visualize sepal and petal measurement distributions.</li>
+                                <li> - Constructed scatterplots to visually differentiate Iris species based on measurements.</li>
+                            </ul>
+                        </li>
+                        <li>• Data Preprocessing:
+                            <ul>
+                                <li> - Encoded species labels using LabelEncoder for numerical compatibility.</li>
+                            </ul>
+                        </li>
+                        <li>• Model Selection:
+                            <ul>
+                                <li> - Chose the Logistic Regression model for multiclass classification.</li>
+                            </ul>
+                        </li>
+                        <li>• Model Training and Evaluation:
+                            <ul>
+                                <li> - Split the dataset into training and testing sets.</li>
+                                <li> - Trained the Logistic Regression model on the training data.</li>
+                                <li> - Made predictions on the test data and assessed model performance.</li>
+                            </ul>
+                        </li>
+                        <li>• Accuracy Assessment:
+                            <ul>
+                                <li> - Calculated and displayed the model's accuracy on the test data.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
