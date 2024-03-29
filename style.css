@@ -830,6 +830,7 @@ form textarea {
     .navlist {
         display: none;
         width: 100%;
+        height: 65%;
         position: fixed;
         top: 80px;
         left: 0;
@@ -841,10 +842,10 @@ form textarea {
         flex-direction: column;
     }
     .navlist ul li {
+        width: 80%;
         margin: 10px 0;
         text-align: center;
         background-color: #000000bd;
-        padding: 20px;
         border-radius: 15px;
     }
 }
